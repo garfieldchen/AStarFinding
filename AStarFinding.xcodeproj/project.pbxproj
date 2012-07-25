@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F25F5B2415BDA73600447F40 /* FindingTracer.m in Sources */ = {isa = PBXBuildFile; fileRef = F25F5B2315BDA73600447F40 /* FindingTracer.m */; };
+		F25F5B2815BDA84300447F40 /* IntPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = F25F5B2715BDA84300447F40 /* IntPoint.m */; };
+		F26ECAE615BB0BAA006E47AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F26ECAE515BB0BAA006E47AA /* UIKit.framework */; };
+		F26ECAE815BB0BAA006E47AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F26ECAE715BB0BAA006E47AA /* Foundation.framework */; };
+		F26ECAEA15BB0BAA006E47AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F26ECAE915BB0BAA006E47AA /* CoreGraphics.framework */; };
+		F26ECAEC15BB0BAA006E47AA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F26ECAEB15BB0BAA006E47AA /* CoreData.framework */; };
+		F26ECAF215BB0BAA006E47AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F26ECAF015BB0BAA006E47AA /* InfoPlist.strings */; };
+		F26ECAF515BB0BAB006E47AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F26ECAF415BB0BAB006E47AA /* main.m */; };
+		F26ECAF815BB0BAB006E47AA /* AStarFindingAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F26ECAF715BB0BAB006E47AA /* AStarFindingAppDelegate.m */; };
+		F26ECAFB15BB0BAB006E47AA /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F26ECAF915BB0BAB006E47AA /* MainWindow.xib */; };
+		F26ECAFE15BB0BAB006E47AA /* AStarFinding.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F26ECAFC15BB0BAB006E47AA /* AStarFinding.xcdatamodeld */; };
+		F26ECB0915BB0BCD006E47AA /* AStar.m in Sources */ = {isa = PBXBuildFile; fileRef = F26ECB0715BB0BCC006E47AA /* AStar.m */; };
+		F29E1FA315BC51DD00C5418B /* TileView.m in Sources */ = {isa = PBXBuildFile; fileRef = F29E1FA215BC51DD00C5418B /* TileView.m */; };
+		F2C9175515BC131F0015F1DE /* StringBlockService.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C9175415BC131F0015F1DE /* StringBlockService.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F25F5B2215BDA73600447F40 /* FindingTracer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindingTracer.h; sourceTree = "<group>"; };
+		F25F5B2315BDA73600447F40 /* FindingTracer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindingTracer.m; sourceTree = "<group>"; };
+		F25F5B2615BDA84300447F40 /* IntPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntPoint.h; sourceTree = "<group>"; };
+		F25F5B2715BDA84300447F40 /* IntPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntPoint.m; sourceTree = "<group>"; };
+		F26ECAE115BB0BAA006E47AA /* AStarFinding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AStarFinding.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F26ECAE515BB0BAA006E47AA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F26ECAE715BB0BAA006E47AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F26ECAE915BB0BAA006E47AA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F26ECAEB15BB0BAA006E47AA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F26ECAEF15BB0BAA006E47AA /* AStarFinding-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AStarFinding-Info.plist"; sourceTree = "<group>"; };
+		F26ECAF115BB0BAA006E47AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F26ECAF315BB0BAA006E47AA /* AStarFinding-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AStarFinding-Prefix.pch"; sourceTree = "<group>"; };
+		F26ECAF415BB0BAB006E47AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F26ECAF615BB0BAB006E47AA /* AStarFindingAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AStarFindingAppDelegate.h; sourceTree = "<group>"; };
+		F26ECAF715BB0BAB006E47AA /* AStarFindingAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AStarFindingAppDelegate.m; sourceTree = "<group>"; };
+		F26ECAFA15BB0BAB006E47AA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		F26ECAFD15BB0BAB006E47AA /* AStarFinding.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AStarFinding.xcdatamodel; sourceTree = "<group>"; };
+		F26ECB0615BB0BCC006E47AA /* AStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AStar.h; sourceTree = "<group>"; };
+		F26ECB0715BB0BCC006E47AA /* AStar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AStar.m; sourceTree = "<group>"; };
+		F26ECB0A15BB0C8F006E47AA /* BlockService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockService.h; sourceTree = "<group>"; };
+		F29E1FA115BC51DD00C5418B /* TileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileView.h; sourceTree = "<group>"; };
+		F29E1FA215BC51DD00C5418B /* TileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileView.m; sourceTree = "<group>"; };
+		F2C9175315BC131F0015F1DE /* StringBlockService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringBlockService.h; sourceTree = "<group>"; };
+		F2C9175415BC131F0015F1DE /* StringBlockService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringBlockService.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F26ECADE15BB0BAA006E47AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F26ECAE615BB0BAA006E47AA /* UIKit.framework in Frameworks */,
+				F26ECAE815BB0BAA006E47AA /* Foundation.framework in Frameworks */,
+				F26ECAEA15BB0BAA006E47AA /* CoreGraphics.framework in Frameworks */,
+				F26ECAEC15BB0BAA006E47AA /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F26ECAD615BB0BAA006E47AA = {
+			isa = PBXGroup;
+			children = (
+				F26ECAED15BB0BAA006E47AA /* AStarFinding */,
+				F26ECAE415BB0BAA006E47AA /* Frameworks */,
+				F26ECAE215BB0BAA006E47AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F26ECAE215BB0BAA006E47AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F26ECAE115BB0BAA006E47AA /* AStarFinding.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F26ECAE415BB0BAA006E47AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F26ECAE515BB0BAA006E47AA /* UIKit.framework */,
+				F26ECAE715BB0BAA006E47AA /* Foundation.framework */,
+				F26ECAE915BB0BAA006E47AA /* CoreGraphics.framework */,
+				F26ECAEB15BB0BAA006E47AA /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F26ECAED15BB0BAA006E47AA /* AStarFinding */ = {
+			isa = PBXGroup;
+			children = (
+				F26ECAF615BB0BAB006E47AA /* AStarFindingAppDelegate.h */,
+				F26ECAF715BB0BAB006E47AA /* AStarFindingAppDelegate.m */,
+				F26ECAF915BB0BAB006E47AA /* MainWindow.xib */,
+				F26ECAFC15BB0BAB006E47AA /* AStarFinding.xcdatamodeld */,
+				F26ECAEE15BB0BAA006E47AA /* Supporting Files */,
+				F26ECB0A15BB0C8F006E47AA /* BlockService.h */,
+				F25F5B2615BDA84300447F40 /* IntPoint.h */,
+				F25F5B2715BDA84300447F40 /* IntPoint.m */,
+				F26ECB0615BB0BCC006E47AA /* AStar.h */,
+				F26ECB0715BB0BCC006E47AA /* AStar.m */,
+				F2C9175315BC131F0015F1DE /* StringBlockService.h */,
+				F2C9175415BC131F0015F1DE /* StringBlockService.m */,
+				F25F5B2215BDA73600447F40 /* FindingTracer.h */,
+				F25F5B2315BDA73600447F40 /* FindingTracer.m */,
+				F29E1FA115BC51DD00C5418B /* TileView.h */,
+				F29E1FA215BC51DD00C5418B /* TileView.m */,
+			);
+			path = AStarFinding;
+			sourceTree = "<group>";
+		};
+		F26ECAEE15BB0BAA006E47AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F26ECAEF15BB0BAA006E47AA /* AStarFinding-Info.plist */,
+				F26ECAF015BB0BAA006E47AA /* InfoPlist.strings */,
+				F26ECAF315BB0BAA006E47AA /* AStarFinding-Prefix.pch */,
+				F26ECAF415BB0BAB006E47AA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F26ECAE015BB0BAA006E47AA /* AStarFinding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F26ECB0115BB0BAB006E47AA /* Build configuration list for PBXNativeTarget "AStarFinding" */;
+			buildPhases = (
+				F26ECADD15BB0BAA006E47AA /* Sources */,
+				F26ECADE15BB0BAA006E47AA /* Frameworks */,
+				F26ECADF15BB0BAA006E47AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AStarFinding;
+			productName = AStarFinding;
+			productReference = F26ECAE115BB0BAA006E47AA /* AStarFinding.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F26ECAD815BB0BAA006E47AA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = F26ECADB15BB0BAA006E47AA /* Build configuration list for PBXProject "AStarFinding" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F26ECAD615BB0BAA006E47AA;
+			productRefGroup = F26ECAE215BB0BAA006E47AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F26ECAE015BB0BAA006E47AA /* AStarFinding */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F26ECADF15BB0BAA006E47AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F26ECAF215BB0BAA006E47AA /* InfoPlist.strings in Resources */,
+				F26ECAFB15BB0BAB006E47AA /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F26ECADD15BB0BAA006E47AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F26ECAF515BB0BAB006E47AA /* main.m in Sources */,
+				F26ECAF815BB0BAB006E47AA /* AStarFindingAppDelegate.m in Sources */,
+				F26ECAFE15BB0BAB006E47AA /* AStarFinding.xcdatamodeld in Sources */,
+				F26ECB0915BB0BCD006E47AA /* AStar.m in Sources */,
+				F2C9175515BC131F0015F1DE /* StringBlockService.m in Sources */,
+				F29E1FA315BC51DD00C5418B /* TileView.m in Sources */,
+				F25F5B2415BDA73600447F40 /* FindingTracer.m in Sources */,
+				F25F5B2815BDA84300447F40 /* IntPoint.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F26ECAF015BB0BAA006E47AA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F26ECAF115BB0BAA006E47AA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F26ECAF915BB0BAB006E47AA /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F26ECAFA15BB0BAB006E47AA /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F26ECAFF15BB0BAB006E47AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		F26ECB0015BB0BAB006E47AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		F26ECB0215BB0BAB006E47AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AStarFinding/AStarFinding-Prefix.pch";
+				INFOPLIST_FILE = "AStarFinding/AStarFinding-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F26ECB0315BB0BAB006E47AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AStarFinding/AStarFinding-Prefix.pch";
+				INFOPLIST_FILE = "AStarFinding/AStarFinding-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F26ECADB15BB0BAA006E47AA /* Build configuration list for PBXProject "AStarFinding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F26ECAFF15BB0BAB006E47AA /* Debug */,
+				F26ECB0015BB0BAB006E47AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F26ECB0115BB0BAB006E47AA /* Build configuration list for PBXNativeTarget "AStarFinding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F26ECB0215BB0BAB006E47AA /* Debug */,
+				F26ECB0315BB0BAB006E47AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F26ECAFC15BB0BAB006E47AA /* AStarFinding.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F26ECAFD15BB0BAB006E47AA /* AStarFinding.xcdatamodel */,
+			);
+			currentVersion = F26ECAFD15BB0BAB006E47AA /* AStarFinding.xcdatamodel */;
+			path = AStarFinding.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F26ECAD815BB0BAA006E47AA /* Project object */;
+}
