@@ -138,6 +138,9 @@ static int s_dirDistance[8] = { 10, 14, 10, 14, 10, 14, 10, 14};
 
 -(NSArray*) find:(id<BlockService>)blocks from:(IntPoint*)posFrom to:(IntPoint*)posTo withTracer:(FindingTracer *)tracer
 {
+    if (posFrom.x == posTo.x && posFrom.y == posTo.y)
+        return [NSArray arrayWithObject:[IntPoint pointWithX:posFrom.x withY: posFrom.y]];
+    
     NSMutableDictionary* openList = [NSMutableDictionary dictionaryWithCapacity: 30];
 	NSMutableDictionary* closeList = [NSMutableDictionary dictionaryWithCapacity:100];
 	
@@ -149,6 +152,9 @@ static int s_dirDistance[8] = { 10, 14, 10, 14, 10, 14, 10, 14};
         //NSLog(@"openList %@", openList);
 		ANode* nearNode = [self nearF: openList];
 
+        if (!nearNode)
+            break;
+        
         //add to tracer for tool
         [tracer addFoot:[IntPoint pointWithX:nearNode.x withY:nearNode.y] withAcition:ActionClose];
         [closeList setObject: nearNode forKey: [NSNumber numberWithInt: nearNode.x << 16 | nearNode.y]];
@@ -183,7 +189,9 @@ static int s_dirDistance[8] = { 10, 14, 10, 14, 10, 14, 10, 14};
                 }
 			}
 		}
-	}	
+	}
+    
+    NSMutableArray* path = nil;
 	
 	if (lastNode) {
 		NSMutableArray* path = [NSMutableArray arrayWithCapacity: 50];
@@ -203,11 +211,13 @@ static int s_dirDistance[8] = { 10, 14, 10, 14, 10, 14, 10, 14};
 		}
         
         //add to tracer, reverse path
-        tracer.path = [path retain];		
-		return [path retain];
-	} else {
-		return nil;
+        tracer.path = path;		
     }
+    
+    [openList release];
+    [closeList release];
+    
+    return  path;
 }
     
 @end
